@@ -5,13 +5,18 @@ author: Karel Tuma <karel.tuma@gmail.com>
 description: >
     DNSBL based shared bans
 commands:
-    shex:
+    sbex:
         description: Add exception from shared bans
         usage: |
             Incorrect usage of /<command>. Examples:
             /<command> foobar - exempt nick foobar from all kinds of bans
-    shunex:
+    sbunex:
         description: Remove exception from shared bans
         usage: |
             Incorrect usage of /<command>. Examples:
             /<command> foobar - remove exempt for nick foobar
+    sbreload:
+        description: Reload SharedBans config
+        usage: |
+            Incorrect usage of /<command>. Examples:
+            /sbreload
