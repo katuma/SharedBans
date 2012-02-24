@@ -1,0 +1,17 @@
+name: SharedBans
+main: cz.majncraft.sharedbans.SharedBans
+version: 0.0.1
+author: Karel Tuma <karel.tuma@gmail.com>
+description: >
+    DNSBL based shared bans
+commands:
+    shex:
+        description: Add exception from shared bans
+        usage: |
+            Incorrect usage of /<command>. Examples:
+            /<command> foobar - exempt nick foobar from all kinds of bans
+    shunex:
+        description: Remove exception from shared bans
+        usage: |
+            Incorrect usage of /<command>. Examples:
+            /<command> foobar - remove exempt for nick foobar
