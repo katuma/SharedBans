@@ -1,4 +1,17 @@
+drone-bls:
+- rbl.efnetrbl.org:
+  - "127.0.0.1": "Open proxy!"
+  - "127.0.0.4": "Don't use TOR to play minecraft!"
+  - "127.0.0.5": "Drones, hacked PC or home router!"
+# add some more drone BLs if you have some...
+
+# ip-based bans (FigAdmin etc)
 ip-dnsbls:
 - majncraft.ip.dnsbl.upal.se
+
+# nick-based bans (custom lists, mcbans gateways, FigAdmin, etc)
 nick-dnsbls:
 - majncraft.nick.dnsbl.upal.se
+# dont let anyone with rep less than 5 in!
+- mcbans.5.dnsbl.upal.se
+
