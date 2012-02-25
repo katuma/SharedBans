@@ -1,0 +1,2 @@
+$TTL 3600
+@               IN      SOA     sharedbans. sharedbans. ( 199609203 3600 3600 604800 3600 )
