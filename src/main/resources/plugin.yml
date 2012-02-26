@@ -1,7 +1,8 @@
 name: SharedBans
 main: cz.majncraft.sharedbans.SharedBans
-version: 0.0.1
+version: 1.0
 author: Karel Tuma <karel.tuma@gmail.com>
+depend: [McGroovy]
 description: >
     DNSBL based shared bans
 commands:
@@ -20,3 +21,9 @@ commands:
         usage: |
             Incorrect usage of /<command>. Examples:
             /sbreload
+    sbcheck:
+        description: Lookup bans for given nick or IP address.
+        usage: |
+            Incorrect usage of /<command>. Examples:
+            /sbcheck PlayerName
+            /sbcheck 1.2.3.4
