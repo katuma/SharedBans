@@ -117,21 +117,21 @@
               <goal>shade</goal>
             </goals>
             <configuration>
-             <minimizeJar>true</minimizeJar>
+              <relocations>
+                <relocation>
+                  <pattern>org.xbill.DNS</pattern>
+                  <shadedPattern>cz.majncraft.sharedbans.DNS</shadedPattern>
+                </relocation>
+              </relocations>
 
-             <artifactSet>
-                <includes>
-<!--                  <include>org.codehaus.groovy:*</include>-->
-                  <include>org.xbill:dnsjava</include>
-                </includes>
+              <artifactSet>
+                <includes><include>org.xbill:dnsjava</include></includes>
               </artifactSet>
+
               <filters>
-                <filter>
-                  <excludes>
-                    <exclude>**</exclude>
-                  </excludes>
-                </filter>
+                <filter><excludes><exclude>**</exclude></excludes></filter>
               </filters>
+
             </configuration>
           </execution>
         </executions>
