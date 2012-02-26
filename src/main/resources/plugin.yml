@@ -1,29 +1,26 @@
 name: SharedBans
 main: cz.majncraft.sharedbans.SharedBans
-version: 1.0
+version: 1.1
 author: Karel Tuma <karel.tuma@gmail.com>
-depend: [McGroovy]
-description: >
-    DNSBL based shared bans
+softdepend: [McGroovy]
+description: DNSBL based shared bans
 commands:
     sbex:
+        permission: sb.sbex
         description: Add exception from shared bans
-        usage: |
-            Incorrect usage of /<command>. Examples:
-            /<command> foobar - exempt nick foobar from all kinds of bans
+        usage: /<command> foobar - exempt nick foobar from all kinds of bans
     sbunex:
+        permission: sb.sbunex
         description: Remove exception from shared bans
-        usage: |
-            Incorrect usage of /<command>. Examples:
-            /<command> foobar - remove exempt for nick foobar
+        usage: /<command> foobar - remove exempt for nick foobar
     sbreload:
+        permission: sb.sbreload
         description: Reload SharedBans config
-        usage: |
-            Incorrect usage of /<command>. Examples:
-            /sbreload
+        usage: /sbreload - reload SharedBans/config.yml
     sbcheck:
+        permission: sb.sbcheck
         description: Lookup bans for given nick or IP address.
         usage: |
-            Incorrect usage of /<command>. Examples:
+            Lookup bans for given nick or IP address.
             /sbcheck PlayerName
             /sbcheck 1.2.3.4

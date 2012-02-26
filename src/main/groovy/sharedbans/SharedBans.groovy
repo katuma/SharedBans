@@ -42,8 +42,6 @@ class SharedBans extends JavaPlugin {
         def c = cmd.getName().toLowerCase()
         def spam = { msg -> sender.sendMessage("[SharedBans] $msg"); return true }
         def cfg = getConfig()
-        if (!sender.hasPermission("sb.$c"))
-                return spam("you need sb.$c permission to do that.")
 
         def wat=false
         switch (c) {
